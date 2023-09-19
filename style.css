@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png);
+  background-size: 100% 100%;
+  font-family: 'Exo 2';
+}
+#astronaut-1 {
+  height: 500px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  animation-name: floating1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+#astronaut-2 {
+  height: 450px;
+  position: absolute;
+  right: 42%;
+  top: 35%;
+  animation: floating2 4s infinite alternate ease-in;
+}
+@keyframes floating1 {
+  form {
+    top: 5%;
+  }
+  to {
+    top: 10%;
+  }
+}
+@keyframes floating2 {
+  form {
+    top: 35%;
+  }
+  to {
+    top: 30%;
+  }
+}
+form {
+  width: 450px;
+  position: absolute;
+  right: 80px;
+  top: 150px;
+  background-color: white;
+  padding: 0 75px;
+  border-radius: 7px;
+}
+
+.inline-block-ele {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.input-ele {
+  width: 300px;
+  height: 40px;
+  padding-left: 5px;
+}
+
+label {
+  margin: 10px 0 4px 0;
+}
+
+#button {
+  margin: auto;
+  margin-top: 10px;
+  background-color: orange;
+  height: 40px;
+  padding: 3%;
+  border-radius: 20px;
+  border-width: none;
+  color: white;
+  margin-bottom: 10%;
+}
+
+#no {
+  margin-left: 10px;
+}
